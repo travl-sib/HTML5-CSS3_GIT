@@ -4,20 +4,20 @@ body {
 }
 
 .container {
-   width: 1280px;
-   margin: 0 auto;
-   font-family: Arial; 
+    width: 1280px;
+    margin: 0 auto;
+    font-family: Arial;
 }
 
 .main-header {
     width: 100%;
-    height: 323px;
+    min-height: 323px;
     background-color: #445161;
     padding: 50px 50px 0 50px;
     box-sizing: border-box;
 }
 
-.main-header:after{
+.main-header:after {
     content: "";
     display: block;
     width: 100%;
@@ -27,7 +27,6 @@ body {
 .main-header-wrap {
     float: left;
     color: #ffffff;
-    
 }
 
 .main-header h1 {
@@ -50,7 +49,7 @@ body {
 }
 
 .main-header-list li:last-child {
-    margin:0;
+    margin: 0;
 }
 
 .main-header-list li:before {
@@ -64,7 +63,6 @@ body {
     background-image: url("img/check.png");
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .main-image {
@@ -73,4 +71,32 @@ body {
     height: 214px;
     float: right;
     background-color: #fff;
+}
+
+.about {
+    padding: 50px 50px 0 50px;
+}
+
+.about-wrap {
+    max-width: 650px;
+    float: left;
+}
+
+.about-wrap h2 {
+    font-size: 30px;
+    margin: 0 0 30px 0;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+.about-video {
+    width: 430px;
+    height: 245px;
+    float: right;
+    background-color: #445161;
+    margin-bottom: 50px;
 }
