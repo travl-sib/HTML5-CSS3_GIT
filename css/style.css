@@ -218,6 +218,7 @@ summary:before {
 
 .reviews {
     background-color: #F5F5F5;
+    padding-bottom: 26px;
 }
 
 .reviews-wrap {
@@ -269,6 +270,7 @@ summary:before {
     font-style: italic;
     color: #333333;
     padding: 16px;
+    margin: 0;
 }
 
 .reviews-message address {
@@ -315,6 +317,7 @@ summary:before {
 }
 
 .purchase-price {
+    display: block;
     font-size: 40px;
     font-weight: 400;
     text-align: center;
@@ -323,6 +326,7 @@ summary:before {
     margin: 0 auto;
     padding: 13px 0;
     border: solid 2px #445162;
+
 }
 
 .purchase-list {
@@ -392,6 +396,7 @@ summary:before {
     border-radius: 5px;
     margin: 0 46px 21px 0;
     padding: 13px 10px;
+    outline: none;
 }
 
 .contacts-form textarea {
@@ -404,6 +409,8 @@ summary:before {
     font-weight: 400;
     color: #445162;
     font-family: arial;
+    resize: none;
+    outline: none;
 }
 
 .contacts-form input:last-child {
@@ -418,12 +425,18 @@ summary:before {
     text-align: center;
     color: #445162;
 }
+.contacts-social{
 
-.contacts-social p {
+}
+.contacts-social span {
+    display: inline-block;
     margin: 8px 0 30px 6px;
     font-size: 16px;
     line-height: 1.5;
     color: #ffffff;
+      
+       width: 100px;
+
 }
 
 .rights {
@@ -435,5 +448,5 @@ summary:before {
 }
 
 .rights span {
-    padding: 10px 0 5px 0;
+    padding: 0px 0 5px 0;
 }
