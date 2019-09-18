@@ -254,7 +254,16 @@ summary:before {
     min-height: 121px;
     background-color: #EBEBEB;
     margin: 0 0 24px 106px;
+    position: relative;
 }
+.reviews-message:before {
+    content: ''; 
+    position: absolute; 
+    left: -20px;
+    top: 28px; 
+    border: 10px solid transparent; 
+    border-right: 10px solid #EBEBEB; 
+   }
 
 .reviews-message:nth-child(2n+1) {
     margin: 0 0 24px 106px;
@@ -402,6 +411,23 @@ summary:before {
     margin: 0 46px 21px 0;
     padding: 13px 10px;
     outline: none;
+    background-color: white;
+}
+
+.contacts-field:focus{
+     background-color: gainsboro;
+}
+
+.contacts-field:hover{
+    box-shadow: 10px 10px 16px -4px rgba(11,89,158,1);
+}
+
+.contacts-form input[type="submit"]:active{
+     background-color: gray;
+}
+
+.contacts-form input[type="submit"]:hover{
+     background-color: gainsboro;
 }
 
 .contacts-form textarea {
@@ -431,25 +457,20 @@ summary:before {
     color: #445162;
 }
 .contacts-social{
+   padding-top: 7px;
 
 }
 .contacts-social-item {
-    
-    margin: 8px 0 30px 6px;
+    position: relative;
+    margin: 0 0 25px 0px;
+    padding-left: 29px;
     font-size: 16px;
     line-height: 1.5;
     color: #ffffff;
     clear: both;
     float: left;
-
 }
 
-.contacts-social-item a{
-    font-family: Socialico;  
-    color: #ffffff;
-    font-size: 30px;
-
-}
 .contacts-social-btn  {
     font-family: Socialico;
     font-size: 60px;
@@ -458,19 +479,71 @@ summary:before {
     color: #ffffff;
     clear: both;
     float: left;
+    margin:  0;
 }
 
-.main-header-list li:before {
+.contacts-social-skype:before {
     content: "";
     display: block;
-    width: 25px;
-    height: 19px;
     top: 0px;
-    left: 0px;
+    left: -5px;
     position: absolute;
-    background-image: url("../img/check.png");
+    width: 24px;
+    height: 26px;
+    background-image: url('../img/skype_icon.png') ;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.contacts-social-icq:before {
+    content: "";
+    display: block;
+    top: 0px;
+    left: -5px;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/icq_icon.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contacts-social-email:before {
+    content: "";
+    display: block;
+    top: 0px;
+    left: -5px;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-image: url('../img/email_icon.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contacts-social-phone:before {
+    content: "";
+    display: block;
+    top: -1px;
+    left: -5px;
+    position: absolute;
+    width: 24px;
+    height: 23px;
+    background-image: url('../img/phone_icon.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.social-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-link:active{
+    text-shadow: 5px 5px 5px red;
+}
+
+.social-link:hover{
+     color: #ccc;
 }
 
 .rights {

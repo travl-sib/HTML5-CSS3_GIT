@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css"> </head>
+    <link rel="stylesheet" href="./css/style.css" type="text/css"> 
+</head>
 
 <body>
     <div class="container">
@@ -26,8 +27,7 @@
                     <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
                     <p class="about-text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                 </div>
-                <video class="about-video" src="./video/small.mp4" width="430" height="245" controls loop muted 
-                poster="./img/f.jpg"></video>
+                <video class="about-video" src="./video/small.mp4" width="430" height="245" controls loop muted ></video>
             </section>
             <section class="pluses">
                 <h2>Dignity and pluses product</h2>
@@ -179,20 +179,26 @@
             <section class="contacts">
                 <h2 class="contacts-head">Contacts</h2>
                 <form class="contacts-form" action="#">
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <textarea name="message"  placeholder="Your message" cols="30" rows="10"></textarea>
+                    <input type="text" class="contacts-field" placeholder="Your name:" required>
+                    <input type="email" class="contacts-field" placeholder="Your email:" required>
+                    <textarea name="message" class="contacts-field"  placeholder="Your message:" cols="30" rows="10" required></textarea>
                     <input type="submit" value="send"> 
                 </form>
                 <div class="contacts-social">
-                    <span class="contacts-social-item"> <a href="#">H</a> here_your_login_skype</span>
-                    <span class="contacts-social-item"> <a href="#">,</a> 279679659</span>
-                    <span class="contacts-social-item">psdhtmlcss@mail.ru</span>
-                    <span class="contacts-social-item">80 00 4568 55 55</span>
-                    <span class="contacts-social-btn">lfigx</span>
+                    <span class="contacts-social-item contacts-social-skype">here_your_login_skype</span>
+                    <span class="contacts-social-item contacts-social-icq">279679659</span>
+                    <span class="contacts-social-item contacts-social-email">psdhtmlcss@mail.ru</span>
+                    <span class="contacts-social-item contacts-social-phone">80 00 4568 55 55</span>
+                    <p class="contacts-social-btn"><a href="#" class="social-link">l</a
+                    ><a href="" class="social-link">f</a><a href="#" class="social-link"
+                    >i</a><a href="#" class="social-link"
+                    >g</a><a href="#" class="social-link">x</a>
+                    </p>
                 </div>
             </section>
-            <section class="rights"><span>Copyright &copy; 2014 Product name · PSD HTML CSS</span> </section>
+            <section class="rights">
+                <span>Copyright &copy; 2014 Product name · PSD HTML CSS</span>
+            </section>
         </footer>
     </div>
 </body>
