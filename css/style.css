@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Socialico;
+    src: url(../fonts/Socialico-Regular.woff); 
+   }
+
 body {
     margin: 0;
     padding: 0;
@@ -365,7 +370,7 @@ summary:before {
 }
 
 .contacts {
-    padding: 50px 250px;
+    padding: 50px 247px;
     background-color: #445162;
     display: flex;
     flex-wrap: wrap;
@@ -428,15 +433,44 @@ summary:before {
 .contacts-social{
 
 }
-.contacts-social span {
-    display: inline-block;
+.contacts-social-item {
+    
     margin: 8px 0 30px 6px;
     font-size: 16px;
     line-height: 1.5;
     color: #ffffff;
-      
-       width: 100px;
+    clear: both;
+    float: left;
 
+}
+
+.contacts-social-item a{
+    font-family: Socialico;  
+    color: #ffffff;
+    font-size: 30px;
+
+}
+.contacts-social-btn  {
+    font-family: Socialico;
+    font-size: 60px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    clear: both;
+    float: left;
+}
+
+.main-header-list li:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 19px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url("../img/check.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .rights {
