@@ -287,6 +287,10 @@ summary:before {
     margin: 0;
 }
 
+.reviews-message a{
+    text-decoration: none;
+}
+
 .reviews-message address {
     font-size: 14px;
     line-height: 18px;
@@ -368,6 +372,7 @@ summary:before {
     text-transform: uppercase;
     margin: 20px auto;
     text-align: center;
+    outline: none;
 }
 
 .purchase-button:hover {
