@@ -69,7 +69,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 1024px;
-    padding: 40px 150px 42px 150px;
+    padding: 40px 7.812% 42px 7.812%;
     background-color: rgba(5, 5, 5, 0.7);
     opacity: 70%;
     background-blend-mode: color;
@@ -96,6 +96,15 @@ a{
     color: #c7b299;
 }
 
+.main-logo a:active{
+    fill: #ccc;
+    color: #ccc;
+}
+
+.main-logo span:active{
+    color: #ccc;
+}
+
 .main-logo span {
      color: #ffffff;
      font-family: Raleway-Regular;
@@ -104,10 +113,8 @@ a{
      margin: 0 0 0 3px;
 }
 
-.main-nav{
-    
-}
-.main-nav a {
+
+.main-link {
     text-decoration: none;
     color: #ffffff;
     font-family: Montserrat-Light;
@@ -116,14 +123,22 @@ a{
 }
 
 .main-nav a:hover {
-color: #c7b299;
+    color: #c7b299;
+}
+
+.main-nav a:active {
+    color: #ccc;
 }
 
 .main-nav svg {
-fill: #fff;
+    fill: #fff;
 }
 .main-nav svg:hover {
-fill: #c7b299;
+    fill: #c7b299;
+}
+
+.main-nav svg:active {
+    fill: #ccc;
 }
 
 .main-nav ul {
@@ -184,11 +199,15 @@ fill: #c7b299;
 .main-arrow {
     margin-top: 102px;
     fill: #fff;
-    opacity=".5"
+    opacity=".5";
 }
 
 .main-arrow:hover {
    fill: #d3c1ad;
+}
+
+.main-arrow:active {
+   fill: #ccc;
 }
 
 .main-btn {
@@ -208,13 +227,13 @@ fill: #c7b299;
     text-transform: uppercase;
 }
 .main-btn:hover {
-background-color: #998639;
+    background-color: #998639;
 }
 
-.main-btn a {
-    
+.main-btn:active {
+    background-color: #998675;
+    color: #ccc;
 }
-
 
 
 .main-pagination{
@@ -237,6 +256,11 @@ background-color: #998639;
 .main-circle:hover{
  border: 2px solid #d3c1ad;
  background-color: transparent;
+}
+
+.main-circle:active{
+ border: 2px solid #ccc;
+ background-color: #ccc;
 }
 
 .choice {
@@ -262,11 +286,19 @@ background-color: #998639;
     fill: #555555;
 }
 
+.choice-card:hover svg {
+    fill: #c7b299;
+   
+}
+
 .choice-card h3{
     color: #555555;
     font-family: "Raleway-SemiBold";
     font-size: 22px;
     margin: 19px 0 0 0;
+}
+.choice-card:hover h3{
+    color: #c7b299;
 }
 
 .choice-card p{
@@ -336,6 +368,11 @@ background-color: #998639;
     z-index: 1;
 }
 
+.browsers-img img:hover {
+    
+    z-index: 5;
+}
+
 .browsers-footer {
     display: flex;
     justify-content: space-between;
@@ -378,7 +415,7 @@ background-color: #998639;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    padding: 80px 19.479%;
+    padding: 76px 15%;
 }
 
 
@@ -388,7 +425,7 @@ background-color: #998639;
     color: #555555;
     font-family: "Raleway-SemiBold";
     font-size: 30px;
-    margin-bottom: 24px;
+    margin-bottom: 13px;
 }
 
 .projects-txt {
@@ -399,7 +436,7 @@ background-color: #998639;
     font-size: 16px;
     line-height: 28px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
  }
 
 .projects-btn {
@@ -417,19 +454,23 @@ background-color: #998639;
     color: #8c8c8c;
     border: 1px solid #ebebeb;
     border-radius: 3px;
-    padding: 6px 22px;
+    padding: 6px 23px;
 }
 
 .projects-btn a:hover {
-    
     color: #fff;
     background-color: #998675;
-    
+}
+
+.projects-btn a:active {
+    color: #ccc;
+    background-color: #998650;
 }
 
 .projects-card {
    margin-bottom: 30px;
-     margin-right: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
     flex-basis: 32%;
     position: relative;
 }
@@ -487,14 +528,14 @@ figure:hover p {
 
 .projects-card figcaption {
     background-color: #fbfaf8;
-    padding: 30px 0 27px 30px;
+    padding: 24px 0 16px 30px;
 }
 
 .projects-card h4 {
    color: #c7b299;
     font-family: Raleway-Medium;
     font-size: 20px;
-    margin-bottom: 14px;
+    margin-bottom: 5px;
 }
 
 .projects-card figcaption p {
@@ -508,6 +549,7 @@ figure:hover p {
 
 .projects .main-btn {
     flex-basis: 100%;
+    margin: 7px auto 0 auto;
 }
 .wrap-btn {
     flex-basis: 100%;
