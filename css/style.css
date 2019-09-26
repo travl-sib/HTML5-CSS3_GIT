@@ -53,6 +53,10 @@ a{
     text-decoration: none;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}
 
 .container {
     max-width: 1920px;
@@ -197,9 +201,8 @@ a{
 }
 
 .main-arrow {
-    margin-top: 102px;
+    margin-top: 11px;
     fill: #fff;
-    opacity=".5";
 }
 
 .main-arrow:hover {
@@ -226,6 +229,7 @@ a{
     line-height: 23px;
     text-transform: uppercase;
 }
+
 .main-btn:hover {
     background-color: #998639;
 }
@@ -234,7 +238,6 @@ a{
     background-color: #998675;
     color: #ccc;
 }
-
 
 .main-pagination{
     display: flex;
@@ -336,24 +339,26 @@ a{
 }
 
 .browsers-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     position: relative;
     margin: 34px 17.9% 0 17.9%;
-    content: "";
-    height: 482px;
+    min-height: 482px;
     padding: 0 17.9% 0 17.9%;
-   
 }
-
 
 .browsers-img img:first-child {
     position: absolute;
-    top: 82px;
+    max-width: 770px;
+    min-height: 400px;
     left: 0;
     z-index: 1;
 }
 .browsers-img img:nth-child(2) {
     position: absolute;
-    top: 0;
+    max-width: 770px;
+    min-height: 482px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -362,8 +367,9 @@ a{
 
 .browsers-img img:last-child {
     position: absolute;
-    bottom: start;
-    top: 82px;
+    max-width: 770px;
+    min-height: 400px;
+      
     right: 0;
     z-index: 1;
 }
@@ -477,24 +483,8 @@ a{
 
 .projects-card  {
     max-width: 370px;
-    
-   
 }
 
-.hidden-card {
-    visibility: hidden;
-    width: 370px;
-    height: 237px;
-    background-color: rgba(17, 17, 17, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
 figure:hover .hidden-card {
     visibility: visible;
@@ -513,6 +503,22 @@ figure:hover p {
     color: #c7b299;
 }
 
+
+.hidden-card {
+    visibility: hidden;
+    width: 370px;
+    height: 237px;
+    background-color: rgba(17, 17, 17, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .hidden-card p {
     margin: 10px;
 }
@@ -529,6 +535,7 @@ figure:hover p {
 .projects-card figcaption {
     background-color: #fbfaf8;
     padding: 24px 0 16px 30px;
+    position: relative;
 }
 
 .projects-card h4 {
@@ -547,6 +554,19 @@ figure:hover p {
     
 }
 
+.projects-card figcaption:before {
+    content: "";
+    position: absolute;
+    top: -34px;
+    left: 21px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #fbfaf8;
+}
+
+.projects-card:hover figcaption:before {
+ border-bottom: 15px solid #362f2d;
+}
+
 .projects .main-btn {
     flex-basis: 100%;
     margin: 7px auto 0 auto;
@@ -554,4 +574,8 @@ figure:hover p {
 .wrap-btn {
     flex-basis: 100%;
 }
+
+button {
+    background-color: transparent;
+    border: none;
 }
