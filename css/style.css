@@ -948,3 +948,93 @@ button {
 .partners img {
     margin: 0 90px 0 0;
 }
+
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     padding: 100px 320px 101px 352px;
+    background-color: #191919;
+}
+
+.information div {
+    max-width: 300px;
+    padding: 0 10px 0 0;
+    text-align: left;
+}
+
+.information h3 {
+    color: #ffffff;
+    font-family: Raleway-SemiBold;
+    font-size: 24px;
+    margin: 0 0 26px 0;
+}
+
+.information p {
+    color: #555555;
+    font-family: Montserrat-Light;
+    font-size: 14px;
+    font-weight: 300;
+    }
+
+.information-widget{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo{
+    margin: -22px 0 24px 0;
+}
+
+.information-waxom p {
+    line-height: 24px;
+    margin: 0 0 33px 0;
+}
+
+.information-time {
+    color: #363636;
+    font-family: Montserrat-Light;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+}
+
+.information-post {
+    display: inline-block;
+    margin: 0 0 42px 0;
+}
+
+.information-post:hover p {
+    color: #c7b299;
+}
+.information-post:hover span {
+    color: #fff;
+}
+
+.twit-time {
+    margin: 10px 0 0 0;
+    color: #363636;
+    font-family: Montserrat-Light;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.information-twit {
+    display: inline-block;
+     margin: 0 0 40px 0;
+}
+
+.information-twit:hover p {
+    color: #c7b299;
+}
+.information-twit:hover span {
+    color: #fff;
+}
+
+.information-widget {
+    align-items: flex-start;
+}
+
+.information-widget img {
+    margin: 0 0 0 0;
+}
